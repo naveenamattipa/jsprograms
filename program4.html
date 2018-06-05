@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function count() {
+            var n=document.getElementById('value').value;
+            var c=0,d=1,e=0;
+            for(var i=1;d<=n && e<=n;i++)
+            {
+                d=Math.pow(2,i); 
+                c++; 
+                e=Math.pow(2,i+1);
+            }
+            document.getElementById('result').innerHTML = c;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="value">
+    <button onclick="count()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>
